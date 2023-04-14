@@ -15,10 +15,17 @@ public class Drink {
         name = "コーヒー";
         price = 150;
         amount = 3;
+        isSale = true;
 
         System.out.println(name);
         System.out.println(price);
         System.out.println(amount);
+        System.out.println(isSale);
+
+        // Type Error
+        // amount = "2";
+        // isSale = 1;
+        // name = 11111;
 
     }
 
