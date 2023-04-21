@@ -85,6 +85,16 @@ public class ItemCalculate {
 
         is_match = (number1 == number2);
         System.out.println(is_match);
+
+        // コンパイルエラー
+        // is_match = (str1 == number1);
+        is_match = (Integer.parseInt(str1) == number1);
+        System.err.println(is_match);
+
+        // Python
+        // is_match = (str1 === number1);
+
+        
     }
     
 }
