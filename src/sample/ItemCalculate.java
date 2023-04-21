@@ -91,10 +91,17 @@ public class ItemCalculate {
         is_match = (Integer.parseInt(str1) == number1);
         System.err.println(is_match);
 
-        // Python
+        // Python, PHP, JavaScript
         // is_match = (str1 === number1);
 
-        
+        // 三項演算
+        // 商品価格
+        price = 550;
+        // 所持金
+        int money = 1000;
+
+        String message = (price <= money) ? "購入できます。" : "所持金が足りません";
+        System.out.println(message);
     }
     
 }
