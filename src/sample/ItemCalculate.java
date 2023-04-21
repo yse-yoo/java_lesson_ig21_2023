@@ -47,10 +47,43 @@ public class ItemCalculate {
 
         // 論理演算
         boolean is_match = false;
-        price = 100;
+        price = 1000;
 
         // price は 100ですか？
         is_match = (price == 100);
+        System.out.println(is_match);
+
+        // price は 100より小さいですか？
+        is_match = (price < 100);
+        System.out.println(is_match);
+
+        // price は 100より大きいですか？
+        is_match = (price > 100);
+        System.out.println(is_match);
+
+        // price は 100ではないですよね？
+        is_match = (price != 100);
+        System.out.println(is_match);
+
+        // price は 100以下ですか？
+        is_match = (price <= 100);
+        System.out.println(is_match);
+
+        // price は 100以上ですか？
+        is_match = (price >= 100);
+        System.out.println(is_match);
+
+        // 同値
+        System.out.println("---- 同値 ----");
+        String str1 = "20";
+        String str2 = "20";
+        int number1 = 20;
+        int number2 = 30;
+
+        is_match = (str1 == str2);
+        System.out.println(is_match);
+
+        is_match = (number1 == number2);
         System.out.println(is_match);
     }
     
