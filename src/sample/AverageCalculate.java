@@ -26,6 +26,7 @@ public class AverageCalculate {
 
         String message = "平均点は" + average + "です。";
         System.out.println(message);
+
     }
 
 }

@@ -44,6 +44,14 @@ public class ItemCalculate {
 
         long totalPrice = (long) price * (long) amount;
         System.out.println(totalPrice);
+
+        // 論理演算
+        boolean is_match = false;
+        price = 100;
+
+        // price は 100ですか？
+        is_match = (price == 100);
+        System.out.println(is_match);
     }
     
 }
