@@ -32,6 +32,11 @@ public class Drink {
         // 定数（constant）
         final Float TAX_RATE = 0.1f;
         System.out.println(TAX_RATE);
+
+        // 定数は値を再代入できない
+        // TAX_RATE = 0.08f;
+
+        
     }
 
 }
