@@ -16,6 +16,11 @@ public class Drink {
         amount = 3;
         isSale = true;
 
+        System.out.println(name);
+        System.out.println(price);
+        System.out.println(amount);
+        System.out.println(isSale);
+
         // int に小数は代入できない
         // amount = 0.1f;
 
