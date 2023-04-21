@@ -29,6 +29,9 @@ public class Drink {
         // 文字列リテラルは代入できる
         // name = "100";
 
+        // 定数（constant）
+        final Float TAX_RATE = 0.1f;
+        System.out.println(TAX_RATE);
     }
 
 }
