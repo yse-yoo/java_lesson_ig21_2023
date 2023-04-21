@@ -18,6 +18,28 @@ public class ItemCalculate {
         answer *= 5;
         answer /= 2;
         System.out.println(answer);
+
+        // cast
+        int price = 205;
+        float pointRate = 0.01f;
+        int point;
+
+        point = (int) (price * pointRate);
+        System.out.println(point + "pt");
+
+        int amount = 5;
+        // インクリメント(increment)
+        amount++;
+        amount++;
+        System.out.println(amount);
+
+        // デクリメント(decrement)
+        amount--;
+        amount--;
+        System.out.println(amount);
+
+        price = 100000;
+
     }
     
 }
