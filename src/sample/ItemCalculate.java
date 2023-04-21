@@ -38,8 +38,12 @@ public class ItemCalculate {
         amount--;
         System.out.println(amount);
 
+        // over flow
         price = 100000;
+        amount = 100000;
 
+        long totalPrice = (long) price * (long) amount;
+        System.out.println(totalPrice);
     }
     
 }
