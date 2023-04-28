@@ -32,13 +32,13 @@ public class Condition {
         System.out.println(weekIndex);
 
         String garbage = "";
-        switch (dayString) {
-            case "月":
-            case "金":
+        switch (weekIndex) {
+            case Calendar.MONDAY:
+            case Calendar.FRIDAY:
                 garbage = "燃えるゴミ";
                 break;
 
-            case "水":
+            case Calendar.WEDNESDAY:
                 garbage = "燃えないゴミ";
                 break;
 
