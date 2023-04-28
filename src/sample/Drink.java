@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Arrays;
+
 public class Drink {
     
     public static void main(String[] args) {
@@ -38,6 +40,8 @@ public class Drink {
 
         // Array
         String[] drinks = { "コーヒー", "紅茶", "ほうじ茶" };
+        System.out.println(drinks);
+        System.out.println(Arrays.toString(drinks));
 
         // Ptyhon, JavaScript, PHP
         //drinks = ["コーヒー", "紅茶", "ほうじ茶"];
