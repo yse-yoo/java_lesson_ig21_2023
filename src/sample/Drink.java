@@ -52,6 +52,8 @@ public class Drink {
 
         drinks[1] = "ウーロン茶";
         System.out.println(Arrays.toString(drinks));
+        // Runtime Exception
+        // drinks[3] = "オレンジジュース";
 
         // 要素数で初期化
         int[] numbers = new int[3];
@@ -59,6 +61,7 @@ public class Drink {
         numbers[1] = 70;
         numbers[2] = 80;
         numbers[0] = 90;
+        // Runtime Exception
         // numbers[3] = 90;
         System.out.println(Arrays.toString(numbers));
 
