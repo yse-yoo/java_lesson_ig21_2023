@@ -36,7 +36,11 @@ public class Drink {
         // 定数は値を再代入できない
         // TAX_RATE = 0.08f;
 
-        
+        // Array
+        String[] drinks = { "コーヒー", "紅茶", "ほうじ茶" };
+
+        // Ptyhon, JavaScript, PHP
+        //drinks = ["コーヒー", "紅茶", "ほうじ茶"];
     }
 
 }
