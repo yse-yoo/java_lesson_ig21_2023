@@ -1,8 +1,7 @@
 package sample;
 
 import java.util.Random;
-
-import javax.print.attribute.standard.Sides;
+import java.util.Scanner;
 
 public class RspGame {
     
@@ -14,7 +13,10 @@ public class RspGame {
         //パー
         final int PAPER = 2;
 
-        int playerHand = PAPER;
+        // playerの手（標準入力:Standrd Input）
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please, input hand:(0:グー, 1:チョキ、 2:パー)");
+        int playerHand = scanner.nextInt();
 
         // pcの手（ランダム）
         Random random = new Random();
