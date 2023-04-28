@@ -12,6 +12,7 @@ public class Condition {
         // メッセージ
         String message = "";
 
+        // OR（どちらかがtrueだったら処理）:  || 
         if (price <= 0 || price >= maxPrice) {
             message = "価格が正しくありません。";
         } else if (money >= price) {
@@ -21,6 +22,19 @@ public class Condition {
         }
 
         System.out.println(message);
+
+        // switch
+        String dayString = "月";
+        String garbage = "";
+        switch (dayString) {
+            case "月":
+                garbage = "燃えるゴミ";
+                break;
+
+            default:
+                break;
+        }
+        System.out.println(garbage);
     }
 
 }
