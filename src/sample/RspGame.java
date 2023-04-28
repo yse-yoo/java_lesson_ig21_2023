@@ -1,12 +1,17 @@
 package sample;
 
+import javax.print.attribute.standard.Sides;
+
 public class RspGame {
     
     public static void main(String[] args) {
+        //グー
         final int ROCK = 0;
+        //チョキ
         final int SCISSORS = 1;
+        //パー
         final int PAPER = 2;
-        int playerHand = ROCK;
+        int playerHand = PAPER;
         int pcHand = ROCK;
         int result = 0;
         String message = "";
