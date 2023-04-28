@@ -28,10 +28,16 @@ public class Condition {
         String garbage = "";
         switch (dayString) {
             case "月":
+            case "金":
                 garbage = "燃えるゴミ";
                 break;
 
+            case "水":
+                garbage = "燃えないゴミ";
+                break;
+
             default:
+                garbage = "回収なし";
                 break;
         }
         System.out.println(garbage);
