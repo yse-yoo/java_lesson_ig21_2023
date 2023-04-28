@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Calendar;
+
 public class Condition {
 
     public static void main(String[] args) {
@@ -25,6 +27,10 @@ public class Condition {
 
         // switch
         String dayString = "月";
+        Calendar cal = Calendar.getInstance();
+        int weekIndex = cal.get(Calendar.DAY_OF_WEEK);
+        System.out.println(weekIndex);
+
         String garbage = "";
         switch (dayString) {
             case "月":
