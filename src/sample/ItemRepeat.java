@@ -18,8 +18,14 @@ public class ItemRepeat {
         }
 
         String[] drinks = { "コーヒー", "紅茶", "ほうじ茶" };
+        // fori
         for (int i = 0; i < drinks.length; i++) {
             System.out.println(drinks[i]);
+        }
+
+        // foreach
+        for (String drink : drinks) {
+            System.out.println(drink);
         }
     }
 
