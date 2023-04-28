@@ -17,6 +17,7 @@ public class RspGame {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please, input hand:(0:グー, 1:チョキ、 2:パー)");
         int playerHand = scanner.nextInt();
+        scanner.close();
 
         // pcの手（ランダム）
         Random random = new Random();
