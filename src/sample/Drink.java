@@ -45,6 +45,23 @@ public class Drink {
 
         // Ptyhon, JavaScript, PHP
         //drinks = ["コーヒー", "紅茶", "ほうじ茶"];
+
+        // 2番目の値を取り出す
+        String selectDrink = drinks[1];
+        System.out.println(selectDrink);
+
+        drinks[1] = "ウーロン茶";
+        System.out.println(Arrays.toString(drinks));
+
+        // 要素数で初期化
+        int[] numbers = new int[3];
+        numbers[0] = 50;
+        numbers[1] = 70;
+        numbers[2] = 80;
+        numbers[0] = 90;
+        // numbers[3] = 90;
+        System.out.println(Arrays.toString(numbers));
+
     }
 
 }
