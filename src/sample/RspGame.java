@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Random;
+
 import javax.print.attribute.standard.Sides;
 
 public class RspGame {
@@ -11,8 +13,13 @@ public class RspGame {
         final int SCISSORS = 1;
         //パー
         final int PAPER = 2;
+
         int playerHand = PAPER;
-        int pcHand = ROCK;
+
+        // pcの手（ランダム）
+        Random random = new Random();
+        int pcHand = random.nextInt(3);
+
         int result = 0;
         String message = "";
 
@@ -26,6 +33,12 @@ public class RspGame {
         } else {
             message = "You Win!!";
         }
+
+        String playerResult = "Player:" + playerHand;
+        String pcResult = "PC:" + pcHand;
+
+        System.out.println(playerResult);
+        System.out.println(pcResult);
         System.out.println(message);
     }
 
