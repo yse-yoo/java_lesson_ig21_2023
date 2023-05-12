@@ -17,4 +17,8 @@ public class Character {
         System.out.println(message);
     }
 
+    public void attack(Character character) {
+        int damage = 5;
+        character.hp -= damage;
+    }
 }
