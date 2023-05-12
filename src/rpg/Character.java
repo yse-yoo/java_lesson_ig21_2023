@@ -1,6 +1,14 @@
 package rpg;
 
 public class Character {
+    
+    // constructor
+    public Character(String name, String job) {
+        this.name = name;
+        this.job = job;
+        this.hp = 50;
+    }
+
     // field(property)    
     public String name;
     public String job;
