@@ -34,6 +34,11 @@ public class Method {
         return totalPrice; 
     }
 
+    public static int calculateTotalPrice(int price, int amount, float taxRate) {
+        float totalPrice = price * amount * (1 + taxRate);
+        return (int) totalPrice; 
+    }
+
     public static void greet(String name) {
         String message = name + "さん、こんにちは"; 
         System.out.println(message);
