@@ -12,6 +12,8 @@ public class Method {
 
         int totalPrice = calculateTotalPrice(200, 5);
         System.out.println(totalPrice);
+
+        greet("YSE");
     }
 
     // public_static_method
@@ -29,5 +31,15 @@ public class Method {
     public static int calculateTotalPrice(int price, int amount) {
         int totalPrice = price * amount;
         return totalPrice; 
+    }
+
+    public static void greet(String name) {
+        String message = name + "さん、こんにちは"; 
+        System.out.println(message);
+    }
+
+    public static void greet(String name, String weather) {
+        String message = name + "さん。" + "今日は" + weather + "ですね"; 
+        System.out.println(message);
     }
 }
