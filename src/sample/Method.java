@@ -14,6 +14,7 @@ public class Method {
         System.out.println(totalPrice);
 
         greet("YSE");
+        greet("YSE", "晴れ");
     }
 
     // public_static_method
