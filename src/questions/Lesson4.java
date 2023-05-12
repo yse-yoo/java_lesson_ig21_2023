@@ -1,5 +1,6 @@
 package questions;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Lesson4 {
@@ -35,6 +36,18 @@ public class Lesson4 {
                 System.out.print(i * j + " ");
             }
             System.out.println();
+        }
+
+        Random random = new Random();
+        String[] symbols = { "○", "●" };
+        int tableSize = 5;
+        for (int row = 0; row < tableSize; row++) {
+            for (int col = 0; col < tableSize; col++) {
+                int index = random.nextInt(symbols.length);
+                String symbol = symbols[index];
+                System.out.print("|" + symbol);
+            }
+            System.out.println("|");
         }
     }
 
