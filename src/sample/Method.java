@@ -9,6 +9,9 @@ public class Method {
 
         // non static method(class method) は直接呼び出せない
         // answer = calculate2(2.f);
+
+        int totalPrice = calculateTotalPrice(200, 5);
+        System.out.println(totalPrice);
     }
 
     // public_static_method
