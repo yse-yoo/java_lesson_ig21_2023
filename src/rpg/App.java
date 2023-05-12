@@ -24,6 +24,7 @@ public class App {
         System.out.println(warrior.hp);
 
         wizard.walk("left");
+        wizard.talk(warrior, "勝負しよう！");
     }
 
 }

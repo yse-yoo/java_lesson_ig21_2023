@@ -12,4 +12,9 @@ public class Character {
         System.out.println(message);
     }
 
+    public void talk(Character character, String message) {
+        message = character.name + "!" + message;
+        System.out.println(message);
+    }
+
 }
