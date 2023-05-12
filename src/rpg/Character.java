@@ -2,9 +2,9 @@ package rpg;
 
 public class Character {
     // field(property)    
-    String name;
-    String job;
-    int hp;
+    public String name;
+    public String job;
+    public int hp;
 
     // class method
     public void walk(String direction) {
