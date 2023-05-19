@@ -1,17 +1,22 @@
 package rpg;
 
 public class Character {
-    
+    // 初期化ブロック
+    {
+        System.out.println("初期化ブロック");
+    }
+
     // constructor
     public Character(String name, String job) {
         this.name = name;
         this.job = job;
         this.hp = 50;
     }
-
-    // 初期化ブロック
-    {
-        System.out.println("初期化ブロック");
+    
+    public Character(String name) {
+        this.name = name;
+        this.level = 1;
+        this.exp = 0;
     }
 
     // field(property)    
