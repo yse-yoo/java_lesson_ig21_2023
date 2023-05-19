@@ -14,5 +14,6 @@ public class Warrior extends Character {
     @Override
     public void attack(Monster monster) {
         System.out.println("オーバーライド");
+        super.attack(monster);
     }
 }

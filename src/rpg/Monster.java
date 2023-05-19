@@ -4,9 +4,9 @@ public class Monster {
     
     public Monster() {
         this.name = "ゴブリン";
-        this.hp = 5;
+        this.hp = 10;
         this.mp = 0;
-        this.attackPower = 2;
+        this.attackPower = 3;
         this.defencePower = 2;
     }
 
