@@ -1,6 +1,6 @@
 package rpg;
 
-public class Warrior extends Character{
+public class Warrior extends Character {
 
     public Warrior(String name) {
         super(name);
