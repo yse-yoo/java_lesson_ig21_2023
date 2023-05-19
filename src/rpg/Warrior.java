@@ -14,6 +14,13 @@ public class Warrior extends Character {
     @Override
     public void attack(Monster monster) {
         System.out.println("オーバーライド");
+        //初期の攻撃力をtmpする
+        int attackPower = this.attackPower;
+        // 攻撃力を2倍
+        this.attackPower *= 2;
+        // 攻撃
         super.attack(monster);
+        // 攻撃量をもとに戻す
+        this.attackPower = attackPower;
     }
 }
