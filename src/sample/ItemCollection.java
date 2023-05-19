@@ -28,6 +28,8 @@ public class ItemCollection {
         int itemCount = drinkList.size();
         System.out.println(itemCount);
 
+        drinkList.clear();
+        System.out.println(drinkList);
     }
 
 }
