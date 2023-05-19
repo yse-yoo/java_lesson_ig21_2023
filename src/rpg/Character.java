@@ -44,4 +44,9 @@ public class Character {
         int damage = 5;
         character.hp -= damage;
     }
+
+    public void attack(Monster monster) {
+        int damage = this.attackPower - monster.defencePower;
+        if (damage > 0) monster.hp -= damage;
+    }
 }
