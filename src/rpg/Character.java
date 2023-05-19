@@ -9,6 +9,11 @@ public class Character {
         this.hp = 50;
     }
 
+    // 初期化ブロック
+    {
+        System.out.println("初期化ブロック");
+    }
+
     // field(property)    
     public String name;
     public String job;
