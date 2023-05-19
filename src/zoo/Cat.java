@@ -8,4 +8,9 @@ public class Cat extends Animal {
         this.crying = "にゃー！";
     }
     
+    @Override
+    public void walk() {
+        String message = this.name + "が警戒して歩いてる";
+        System.out.println(message);
+    }
 }

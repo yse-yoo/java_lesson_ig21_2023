@@ -11,6 +11,7 @@ public class App2 {
         for (Animal animal : animals) {
             System.out.println(animal.name);
             animal.cry();
+            animal.walk();
         }
     }
 }
