@@ -6,6 +6,9 @@ public class Animal {
         this.name = name;
     }
 
+    public Animal() {
+    }
+
     // property
     public String type;
     public String name;
