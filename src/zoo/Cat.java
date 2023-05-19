@@ -13,4 +13,8 @@ public class Cat extends Animal {
         String message = this.name + "が警戒して歩いてる";
         System.out.println(message);
     }
+
+    public void soloAction() {
+        System.out.println("単独行動する");
+    }
 }
