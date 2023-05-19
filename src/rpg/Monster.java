@@ -1,6 +1,14 @@
 package rpg;
 
 public class Monster {
+    
+    public Monster() {
+        this.name = "ゴブリン";
+        this.hp = 5;
+        this.mp = 0;
+        this.attackPower = 2;
+        this.defencePower = 2;
+    }
 
     public String name;
     public String job;
