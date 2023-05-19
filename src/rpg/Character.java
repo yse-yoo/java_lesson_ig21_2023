@@ -18,6 +18,11 @@ public class Character {
     public String name;
     public String job;
     public int hp;
+    public int mp;
+    public int level;
+    public int exp;
+    public int attackPower;
+    public int defencePower;
 
     // class method
     public void walk(String direction) {
