@@ -22,6 +22,12 @@ public class ItemCollection {
         drinkList.set(1, "オレンジジュース");
         System.out.println(drinkList);
 
+        drinkList.remove(2);
+        System.out.println(drinkList);
+
+        int itemCount = drinkList.size();
+        System.out.println(itemCount);
+
     }
 
 }
