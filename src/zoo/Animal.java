@@ -1,6 +1,11 @@
 package zoo;
 
 public class Animal {
+    // constructor 
+    public Animal(String name) {
+        this.name = name;
+    }
+
     // property
     public String type;
     public String name;
