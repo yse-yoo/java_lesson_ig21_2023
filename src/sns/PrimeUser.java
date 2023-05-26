@@ -1,7 +1,10 @@
 package sns;
 
-import item.User;
+import sns.entity.User;
 
 public class PrimeUser extends User {
     
+    public void showEmail() {
+       System.out.println(this.email); 
+    }
 }
