@@ -45,6 +45,7 @@ public class Character extends CharacterAbstract{
         if (damage > 0) character.hp -= damage;
     }
 
+    @Override
     public void attack(Monster monster) {
         int damage = this.attackPower - monster.defencePower;
         if (damage > 0) monster.hp -= damage;
@@ -54,4 +55,5 @@ public class Character extends CharacterAbstract{
     public boolean isAlive() {
         return (this.hp > 0);
     }
+
 }
