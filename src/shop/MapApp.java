@@ -30,6 +30,9 @@ public class MapApp {
             System.out.println(value);
         }
 
+        // データ削除
+        drinkMap.remove("D0002");
+
         // 繰り返し
         for (String key : drinkMap.keySet()) {
             String name = drinkMap.get(key);
