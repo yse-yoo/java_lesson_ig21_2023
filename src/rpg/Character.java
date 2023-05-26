@@ -1,6 +1,6 @@
 package rpg;
 
-public class Character extends CharacterAbstract{
+public class Character implements ICharacter {
     // 初期化ブロック
     {
         System.out.println("初期化ブロック");
@@ -54,6 +54,11 @@ public class Character extends CharacterAbstract{
     @Override
     public boolean isAlive() {
         return (this.hp > 0);
+    }
+
+    @Override
+    public void magic(Monster monster, String key) {
+        // 
     }
 
 }
