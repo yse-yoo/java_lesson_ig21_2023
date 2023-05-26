@@ -11,6 +11,10 @@ public class MapApp {
         drinkMap.put("D0001", "コーヒー");
         drinkMap.put("D0002", "紅茶");
         drinkMap.put("D0003", "ほうじ茶");
+
+        // データ取得
+        String drinkName = drinkMap.get("D0003");
+        System.out.println(drinkName);
     }
 
 }
