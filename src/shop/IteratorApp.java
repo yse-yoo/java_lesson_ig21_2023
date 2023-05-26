@@ -14,7 +14,15 @@ public class IteratorApp {
         drinkList.add(drink1);
         drinkList.add(drink2);
         drinkList.add(drink3);
-        
+
+        // イテレーターに変換
+        Iterator<Drink> iterator = drinkList.iterator();
+        // 次のデータがあれば、ずっと繰り返す
+        while (iterator.hasNext()) {
+            // 次のデータを取得
+            Drink drink = iterator.next();
+            System.out.println(drink.name);
+        }
     }
 
 }
