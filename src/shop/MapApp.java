@@ -15,6 +15,27 @@ public class MapApp {
         // データ取得
         String drinkName = drinkMap.get("D0003");
         System.out.println(drinkName);
+
+        // データ個数
+        int drinkCount = drinkMap.size();
+        System.out.println(drinkCount);
+
+        // キーの繰り返し
+        for (String key : drinkMap.keySet()) {
+            System.out.println(key);
+        }
+
+        // 値の繰り返し
+        for (String value : drinkMap.values()) {
+            System.out.println(value);
+        }
+
+        // 繰り返し
+        for (String key : drinkMap.keySet()) {
+            String name = drinkMap.get(key);
+            System.out.println(key + ":" + name);
+        }
+
     }
 
 }
