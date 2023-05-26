@@ -39,6 +39,12 @@ public class MapApp {
             System.out.println(key + ":" + name);
         }
 
+
+        Map<String, Drink> drinkMap2 = new HashMap<>();
+        drinkMap2.put("D0001", new Drink("コーヒー", 350, 100));
+        drinkMap2.put("D0002", new Drink("紅茶", 400, 10));
+        drinkMap2.put("D0003", new Drink("ほうじ茶", 300, 50));
+
     }
 
 }
