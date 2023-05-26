@@ -1,6 +1,6 @@
 package rpg;
 
-public class Character {
+public class Character extends CharacterAbstract{
     // 初期化ブロック
     {
         System.out.println("初期化ブロック");
@@ -48,5 +48,10 @@ public class Character {
     public void attack(Monster monster) {
         int damage = this.attackPower - monster.defencePower;
         if (damage > 0) monster.hp -= damage;
+    }
+
+    @Override
+    public boolean isAlive() {
+        return (this.hp > 0);
     }
 }
