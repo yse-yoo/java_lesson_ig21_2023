@@ -25,7 +25,17 @@ public class IteratorApp {
             System.out.println(drink.name);
         }
 
+        System.out.println("--- List Iterator ---");
         ListIterator<Drink> listIterator = drinkList.listIterator();
+
+        while (listIterator.hasNext()) {
+            Drink drink = listIterator.next();
+            System.out.println(drink.name);
+        }
+        while (listIterator.hasPrevious()) {
+            Drink drink = listIterator.previous();
+            System.out.println(drink.name);
+        }
 
     }
 
