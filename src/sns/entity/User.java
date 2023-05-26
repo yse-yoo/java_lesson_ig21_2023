@@ -2,6 +2,8 @@ package sns.entity;
 
 public class User {
     
-    public String email;
+    private String email;
+    private String name;
+    private String password;
 
 }
