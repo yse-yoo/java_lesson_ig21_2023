@@ -2,6 +2,7 @@ package shop;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class IteratorApp {
     
@@ -23,6 +24,9 @@ public class IteratorApp {
             Drink drink = iterator.next();
             System.out.println(drink.name);
         }
+
+        ListIterator<Drink> listIterator = drinkList.listIterator();
+
     }
 
 }
