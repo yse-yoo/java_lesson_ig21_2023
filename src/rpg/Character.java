@@ -1,5 +1,7 @@
 package rpg;
 
+import rpg.item.Item;
+
 public class Character implements ICharacter {
     // 初期化ブロック
     {
@@ -65,5 +67,11 @@ public class Character implements ICharacter {
 	public void magic(Character character, String key) {
 
 	}
+
+    @Override
+    public void equip(Item item) {
+        this.attackPower += item.getAttackPower();
+        this.defencePower += item.getDefencePower();
+    }
 
 }

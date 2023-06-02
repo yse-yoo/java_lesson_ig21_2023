@@ -32,6 +32,5 @@ public class Item {
     public void setDefencePower(int defencePower) {
         this.defencePower = defencePower;
     }
-
     
 }
