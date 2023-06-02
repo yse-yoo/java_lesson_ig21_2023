@@ -13,6 +13,9 @@ public class App {
         drinkList.add(drink2);
         drinkList.add(drink3);
 
+        //Array
+        //drink[1];
+
         // 紅茶を取得
         Drink selectDrink = drinkList.get(1);
         System.out.println(selectDrink.name);

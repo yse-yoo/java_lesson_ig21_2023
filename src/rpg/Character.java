@@ -29,7 +29,7 @@ public class Character implements ICharacter {
     public int attackPower;
     public int defencePower;
 
-    // class method
+    // instance method
     public void walk(String direction) {
         String message = this.name + " move to " + direction;    
         System.out.println(message);

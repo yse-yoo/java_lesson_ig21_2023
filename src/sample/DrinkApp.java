@@ -2,9 +2,13 @@ package sample;
 
 import java.util.Arrays;
 
-public class Drink {
+import item.Drink;
+
+public class DrinkApp {
     
     public static void main(String[] args) {
+        Drink drink;
+        
         // スニペット: syso
         System.out.println("Drink class");
         

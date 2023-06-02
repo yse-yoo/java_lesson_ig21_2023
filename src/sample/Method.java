@@ -8,7 +8,8 @@ public class Method {
         System.out.println(answer);
 
         // non static method(class method) は直接呼び出せない
-        // answer = calculate2(2.f);
+        Method method = new Method();
+        answer = method.calculate2(2.f);
 
         int totalPrice = calculateTotalPrice(200, 5);
         System.out.println(totalPrice);
@@ -17,13 +18,16 @@ public class Method {
         greet("YSE", "晴れ");
     }
 
+    // Python
+    // def calculate:
+
     // public_static_method
     public static Float calculate(Float x) {
         Float y = x + 5;    
         return y;
     }
 
-    // class method(non-staic method)
+    // instance method(non-staic method)
     public Float calculate2(Float x) {
         Float y = x + 5;    
         return y;
