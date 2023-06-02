@@ -58,7 +58,12 @@ public class Character implements ICharacter {
 
     @Override
     public void magic(Monster monster, String key) {
-        // 
+
     }
+
+	@Override
+	public void magic(Character character, String key) {
+
+	}
 
 }
