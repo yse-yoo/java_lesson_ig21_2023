@@ -22,6 +22,9 @@ public class FileLoadApp {
                 System.out.println(line);
             }
 
+            buffer.close();
+            reader.close();
+            file.close();
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが開けませんでした。");
         } catch (IOException e) {
