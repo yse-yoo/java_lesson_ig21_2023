@@ -8,9 +8,12 @@ public class ExpceptionApp {
         average = calculateAverage(300, 110);
         System.out.println(average);
 
+        average = calculateAverage(300, 0);
+        System.out.println(average);
     }
 
-    public static Float calculateAverage(int score, int count) {
-        return (float) score / (float) count;
+    public static float calculateAverage(int score, int count) {
+        int average = score / count;
+        return (float) average;
     }
 }
