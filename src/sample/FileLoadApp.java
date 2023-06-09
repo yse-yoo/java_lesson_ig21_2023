@@ -7,9 +7,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class FileLoadApp {
-    
+
     public static void main(String[] args) {
         String path = "data/sample.txt";
+        loadFile(path);
+    }
+
+    public static void loadFile(String path) {
         try {
             FileInputStream file = new FileInputStream(path);
             InputStreamReader reader = new InputStreamReader(file, "UTF-8");
@@ -32,7 +36,5 @@ public class FileLoadApp {
         } finally {
             System.out.println("処理が終了しました");
         }
-
     }
-
 }
