@@ -29,6 +29,8 @@ public class FileLoadApp {
             System.out.println("ファイルが開けませんでした。");
         } catch (IOException e) {
             System.out.println("ファイル読み込みエラー");
+        } finally {
+            System.out.println("処理が終了しました");
         }
 
     }
