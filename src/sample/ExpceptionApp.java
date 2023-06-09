@@ -13,6 +13,10 @@ public class ExpceptionApp {
     }
 
     public static float calculateAverage(int score, int count) {
+        if (count == 0) {
+            System.out.println("count が 0 です。");
+            return 0.f;
+        }
         int average = score / count;
         return (float) average;
     }
