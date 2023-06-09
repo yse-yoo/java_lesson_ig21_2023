@@ -1,5 +1,7 @@
 package shop;
 
+import javax.sound.midi.Synthesizer;
+
 public class EnumApp {
     
     public static void main(String[] args) {
@@ -20,6 +22,10 @@ public class EnumApp {
             System.out.println(size);
             System.out.println(size.getValue());
         }
+        
+        System.out.println("--- valueOf ---");
+        String sizeString = "SMALL";
+        System.out.println(Size.valueOf(sizeString));
     }
 
 }
