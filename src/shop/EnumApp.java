@@ -11,7 +11,9 @@ public class EnumApp {
         System.out.println(coffee2.size);
         System.out.println(coffee3.size);
 
-
+        System.out.println(coffee1.size.getValue());
+        System.out.println(coffee2.size.getValue());
+        System.out.println(coffee3.size.getValue());
     }
 
 }
