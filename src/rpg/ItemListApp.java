@@ -12,5 +12,7 @@ public class ItemListApp {
             System.out.println(item.getName());
             System.out.println(item.getPrice());
         }
+
+        System.out.println(itemList.list.get(0).getName());
     }
 }
