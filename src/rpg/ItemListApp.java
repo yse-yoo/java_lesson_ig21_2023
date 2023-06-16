@@ -10,6 +10,7 @@ public class ItemListApp {
 
         for (Item item : itemList.list) {
             System.out.println(item.getName());
+            System.out.println(item.getType());
             System.out.println(item.getPrice());
         }
 
