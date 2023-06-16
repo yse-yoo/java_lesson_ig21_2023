@@ -4,10 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.Buffer;
-import java.nio.charset.CharsetDecoder;
 import java.util.ArrayList;
 
 public class ItemList {
@@ -36,7 +33,6 @@ public class ItemList {
 
             // アイテムデータ読み込み（２行目以降）
             while ((line = buffer.readLine()) != null) {
-                System.out.println(line);    
                 // カンマ区切りで配列（文字列）
                 String[] data = line.split(",");
 
@@ -46,6 +42,10 @@ public class ItemList {
                 Integer attackPower = Integer.parseInt(data[4]);
                 Integer defencePower = Integer.parseInt(data[5]);
 
+                // アイテム生成
+                Item item = new Item(name, price, attackPower, defencePower);
+                // アイテムリストに追加
+                list.add(item);
             }
 
         } catch (FileNotFoundException e) {
