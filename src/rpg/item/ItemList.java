@@ -33,6 +33,21 @@ public class ItemList {
             buffer = new BufferedReader(reader);
             String line = buffer.readLine();
             System.out.println(line);
+
+            // アイテムデータ読み込み（２行目以降）
+            while ((line = buffer.readLine()) != null) {
+                System.out.println(line);    
+                // カンマ区切りで配列（文字列）
+                String[] data = line.split(",");
+
+                Long id = Long.parseLong(data[0]);
+                String name = data[1];
+                Integer price = Integer.parseInt(data[3]);
+                Integer attackPower = Integer.parseInt(data[4]);
+                Integer defencePower = Integer.parseInt(data[5]);
+
+            }
+
         } catch (FileNotFoundException e) {
             System.out.println(CSV_PATH + " が開けません");
         } catch (IOException e) {
