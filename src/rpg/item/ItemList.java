@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class ItemList {
 
     private final String CSV_PATH = "data/item.csv";
-    ArrayList<Item> list = new ArrayList<>();
+    public ArrayList<Item> list = new ArrayList<>();
 
     public ItemList() {
         this.loadCSV();
