@@ -10,9 +10,15 @@ public class OrderApp {
         items.add(new Item("紅茶"));
         items.add(new Item("ほうじ茶"));
 
+        //通常の foreach
         for (Item item : items) {
-
+            item.order();
         }
+
+        // ラムダ式
+        items.forEach(item -> {
+            item.order();
+        });
     }
 
 }
