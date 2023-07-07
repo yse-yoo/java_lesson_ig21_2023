@@ -9,6 +9,8 @@ public class Item {
     }
     
     public void order() {
-        
+        System.out.println(name);
+        // ...
+        System.out.println("---注文完了---");
     }
 }
