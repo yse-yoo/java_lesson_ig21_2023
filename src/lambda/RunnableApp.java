@@ -11,6 +11,12 @@ public class RunnableApp {
         };
         runner2.run();
 
+        showMessage(runner);
+        showMessage(runner2);
     }
 
+    public static void showMessage(Runnable runner) {
+        System.out.println("--- Ready ---");
+        runner.run();
+    }
 }
