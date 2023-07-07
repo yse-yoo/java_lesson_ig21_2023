@@ -1,6 +1,5 @@
 package timer;
 
-import java.lang.ref.Cleaner;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -16,7 +15,11 @@ public class DateTimerApp {
         calendar.set(Calendar.SECOND, 0);
 
         Date scheculeTime = calendar.getTime();
+        //GMT
         System.out.println(scheculeTime);
+        //UTC
+        System.out.println(scheculeTime.toInstant());
+
     }
 
 }
