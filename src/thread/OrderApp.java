@@ -12,12 +12,14 @@ public class OrderApp {
 
         //通常の foreach
         for (Item item : items) {
-            item.order();
+            ShopThread thread = new ShopThread(item);
+            thread.start();
         }
 
         // ラムダ式
         items.forEach(item -> {
-            item.order();
+            ShopThread thread = new ShopThread(item);
+            thread.start();
         });
     }
 
