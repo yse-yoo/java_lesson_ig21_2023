@@ -9,8 +9,12 @@ public class Item {
     }
     
     public void order() {
-        System.out.println(name);
-        // ...
+        try {
+            System.out.println(name);
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println("---注文完了---");
     }
 }
