@@ -11,12 +11,14 @@ public class OrderApp {
         items.add(new Item("ほうじ茶"));
 
         //通常の foreach
+        System.out.println("--- normal ---");
         for (Item item : items) {
             ShopThread thread = new ShopThread(item);
             thread.start();
         }
 
         // ラムダ式
+        System.out.println("--- lambda ---");
         items.forEach(item -> {
             ShopThread thread = new ShopThread(item);
             thread.start();
