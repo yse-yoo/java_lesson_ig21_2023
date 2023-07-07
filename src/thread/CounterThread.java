@@ -6,8 +6,11 @@ public class CounterThread implements Runnable {
 
     @Override
     public void run() {
-        String message = Thread.currentThread().getName();
-        System.out.println(message);
+        while (count > 0) {
+            String message = Thread.currentThread().getName() + ":" + count;
+            System.out.println(message);
+            count--;
+        }
         System.out.println("---End thread---");
     }
 
