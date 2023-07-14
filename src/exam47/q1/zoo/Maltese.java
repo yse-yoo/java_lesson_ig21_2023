@@ -1,4 +1,4 @@
-package exam47.zoo;
+package exam47.q1.zoo;
 
 public class Maltese extends Dog {
     
