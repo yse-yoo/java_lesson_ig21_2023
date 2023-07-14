@@ -7,7 +7,9 @@ class Token implements Identifiable {
     long num;
     String attribute;
 
+    //デフォルトコンストラクタ
     Token() {
+        System.out.println("Constructor of Super Class");
         num = number;
         number = number + 1;
         // number += 1;
