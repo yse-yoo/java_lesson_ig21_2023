@@ -1,4 +1,4 @@
-package exam47.q4;
+package exam47.q5;
 
 public class Q25 {
 
