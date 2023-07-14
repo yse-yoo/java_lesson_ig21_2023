@@ -23,6 +23,8 @@ public class CityList {
                 // target: cities の index
                 // next: cities の index
                 for (int target = 0; target < length; target++) {
+                    System.out.println("-- getDigit --");
+                    System.out.println(cities[target].getName() + "の" + place + "の位：" + getDigit(target, place));
                     if (getDigit(target, place) == digit) {
                         move(target, next);
                         next++;
