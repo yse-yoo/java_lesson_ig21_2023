@@ -12,6 +12,5 @@ public class Q2App {
         //インスタンスを作成してアクセス
         brtoken1.num = 4;
         brtoken2.num = 7;
-
     }
 }
