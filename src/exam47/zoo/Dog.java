@@ -13,5 +13,13 @@ public class Dog extends Animal {
         System.out.println(message);
     }
 
+    public static void greed(String message) {
+        System.out.println(message);
+    }
+
+    @Override
+    public void walk() {
+
+    }
 
 }
