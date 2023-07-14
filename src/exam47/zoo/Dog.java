@@ -4,8 +4,7 @@ import exam47.food.Food;
 
 public class Dog extends Animal {
     
-    public Dog() {
-        String name = "タロー";
+    public Dog(String name) {
         this.name = name;
     }
 

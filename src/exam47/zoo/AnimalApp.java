@@ -9,7 +9,7 @@ public class AnimalApp {
         Food food = new Food();
         food.name = "りんご";
 
-        Dog dog = new Dog();
+        Dog dog = new Dog("タロー");
         dog.eat(food);
 
         //スーパークラスのオブジェクト
