@@ -14,8 +14,16 @@ public class AnimalApp {
 
         //スーパークラスのオブジェクト
         Animal animal = new Animal();
+
+        //スーパークラスにサブクラスのオブジェクトは代入できる
+        //キャストなし
         animal = dog;
+        //キャスト
         animal = (Animal) dog;
+
+        System.out.println(animal.name);
+
+        //サブクラスにスーパークラスのオブジェクトは代入できない
         // dog = animal;
 
         //staticメソッドの実行
