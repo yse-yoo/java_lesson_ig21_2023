@@ -43,6 +43,11 @@ public class Method {
         return (int) totalPrice; 
     }
 
+    public static int calculateTotalPrice(int price, int amount, boolean isSale) {
+        float totalPrice = price * amount;
+        return (int) totalPrice; 
+    }
+    
     public static void greet(String name) {
         String message = name + "さん、こんにちは"; 
         System.out.println(message);
